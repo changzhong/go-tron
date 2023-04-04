@@ -29,7 +29,7 @@ const (
 )
 
 var (
-	feeLimit int64 = 30_000_000
+	feeLimit int64 = 40_000_000
 )
 
 type TRC20 struct {
