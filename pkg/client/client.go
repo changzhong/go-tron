@@ -28,7 +28,7 @@ func NewGrpcClient(grpcURL string, opts ...grpc.DialOption) (*GrpcClient, error)
 		GrpcURL:     grpcURL,
 		Conn:        conn,
 		Client:      api.NewWalletClient(conn),
-		grpcTimeout: 5 * time.Second,
+		grpcTimeout: 30 * time.Second,
 		opts:        opts,
 	}, nil
 }
